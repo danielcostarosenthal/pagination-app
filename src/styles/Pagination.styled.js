@@ -7,6 +7,9 @@ export const StyledPagination = styled.div`
 	justify-content: flex-start;
 	height: 25px;
 
+	color: #23415a;
+	font-family: sans-serif;
+
 	.paginationItem {
 		width: 25px;
 		height: 25px;
@@ -14,9 +17,10 @@ export const StyledPagination = styled.div`
 		padding-top: 12.5px;
 
 		background: #fff;
-		border: 2px solid #666;
+		border: 2px solid #23415a;
 		border-radius: 50%;
 		cursor: pointer;
+		user-select: none;
 
 		position: relative;
 	}
@@ -41,21 +45,26 @@ export const StyledPagination = styled.div`
 		border: none;
 		border-radius: 5px;
 		box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
-		color: blue;
+		color: #23415a;
 		cursor: pointer;
+		user-select: none;
 	}
 
 	.paginationItem.active {
-		border: 1px solid #888;
-		color: #888;
+		border: 1px solid #23415a;
+		color: #23415a;
 		pointer-events: none;
 	}
 
 	.prev.disabled,
 	.next.disabled {
 		box-shadow: none;
-		color: #999;
+		color: #23415a;
 		pointer-events: none;
+	}
+
+	small {
+		user-select: none;
 	}
 
 	@media (max-width: 425px) {
